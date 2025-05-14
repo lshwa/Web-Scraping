@@ -16,7 +16,7 @@ driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), opti
 BASE = "https://gall.dcinside.com"
 GALLERY = "neostock"
 
-for page in range(1, 11):
+for page in range(1, 20):
     url = f"{BASE}/board/lists/?id={GALLERY}&page={page}"
     print(f"\U0001F50D {page}페이지 요청 중...")
     try:
